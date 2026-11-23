@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gold Petshop | Gaziantep Pet Shop</title>
+<meta name="description" content="Gold Petshop: Gaziantep'te kedi, köpek, kuş ve akvaryum ürünleri. WhatsApp'tan sipariş verin, kapınıza getirelim.">
+<meta property="og:title" content="Gold Petshop | Gaziantep Pet Shop">
+<meta property="og:description" content="Mama, kum, oyuncak ve aksesuar. WhatsApp'tan sipariş, eve teslim.">
+<meta property="og:image" content="../assets/hero.jpg">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: {
+    fistik: { 100:'#EEF4DE', 300:'#C4DA8E', 500:'#9DBE5A', 700:'#4E6B1F' },
+    murek: { DEFAULT:'#2A1838', soft:'#5B4A68' },
+    kagit: '#F5F7F0',
+    gunes: '#FFC23D',
+  },
+  fontFamily: { display:['"Bricolage Grotesque"','sans-serif'], sans:['"Instrument Sans"','system-ui','sans-serif'] },
+}}}
+</script>
+<style>
+  :root{ --s1:.5rem; --s2:1rem; --s3:1.5rem; --s4:2.5rem; --s5:4rem; --s6:6rem; --spring:cubic-bezier(.34,1.56,.64,1); }
+  body{ background:#F5F7F0; color:#2A1838; line-height:1.7; }
+  .display{ font-family:"Bricolage Grotesque",sans-serif; letter-spacing:-.035em; line-height:.92; }
+  .grain::after{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.18; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .hero-bg{ background:
+      radial-gradient(60% 55% at 85% 20%, rgba(157,190,90,.45), transparent 70%),
+      radial-gradient(45% 40% at 10% 90%, rgba(255,194,61,.30), transparent 70%),
+      radial-gradient(30% 30% at 55% 60%, rgba(196,218,142,.35), transparent 70%), #F5F7F0; }
+  .arch{ border-radius: 999px 999px 28px 28px; }
+  .lift{ box-shadow: 0 1px 2px rgba(42,24,56,.06), 0 8px 24px -8px rgba(78,107,31,.22), 0 24px 48px -24px rgba(42,24,56,.18); }
+  .float{ box-shadow: 0 2px 4px rgba(42,24,56,.08), 0 18px 40px -12px rgba(42,24,56,.35); }
+  .btn{ transition: transform .35s var(--spring), box-shadow .25s ease, background-color .2s ease; }
+  .btn:hover{ transform: translateY(-2px); }
+  .btn:active{ transform: translateY(1px) scale(.98); }
+  .btn:focus-visible, a:focus-visible{ outline:3px solid #2A1838; outline-offset:3px; border-radius:999px; }
+  .cat-card img{ transition: transform .6s var(--spring); }
+  .cat-card:hover img{ transform: scale(1.04); }
+  .cat-card:focus-visible{ outline:3px solid #2A1838; outline-offset:4px; }
+  @keyframes rise{ from{ opacity:0; transform:translateY(24px) } to{ opacity:1; transform:none } }
+  .rise{ animation: rise .9s var(--spring) both; }
+  .rise-2{ animation-delay:.12s } .rise-3{ animation-delay:.24s }
+  @media (prefers-reduced-motion: reduce){ .rise{ animation:none } .btn,.cat-card img{ transition:none } }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- Demo bandı -->
+<div class="bg-murek text-kagit text-sm">
+  <div class="max-w-6xl mx-auto px-4 py-2 flex flex-wrap gap-x-3 gap-y-1 items-center justify-center text-center">
+    <span>Bu sayfa Gold Petshop için hazırlanmış ücretsiz bir tasarım önizlemesidir.</span>
+    <a href="https://bartss.com/" class="underline underline-offset-4 decoration-fistik-500 hover:text-gunes">Bartss · Alper Kayabaş</a>
+  </div>
+</div>
+
+<!-- Üst menü -->
+<header class="sticky top-0 z-30 bg-kagit/85 backdrop-blur border-b border-murek/10">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+    <a href="#" class="display text-lg md:text-xl font-extrabold tracking-tight truncate min-w-0">Gold Petshop</a>
+    <nav class="hidden md:flex gap-6 text-[15px] text-murek-soft">
+      <a href="#urunler" class="hover:text-murek">Ürünler</a>
+      <a href="#siparis" class="hover:text-murek">Sipariş</a>
+      <a href="#magaza" class="hover:text-murek">Mağaza</a>
+    </nav>
+    <a href="tel:+905530682692" class="btn shrink-0 whitespace-nowrap rounded-full border border-murek/20 px-4 py-2 text-sm font-semibold hover:bg-murek hover:text-kagit"><span class="md:hidden">Hemen ara</span><span class="hidden md:inline">0553 068 26 92</span></a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero-bg grain relative overflow-hidden">
+  <div class="relative max-w-6xl mx-auto px-4 pt-10 pb-16 md:pt-16 md:pb-24 grid md:grid-cols-[1.15fr_.85fr] gap-10 md:gap-12 items-center">
+    <div>
+      <p class="rise inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm font-medium text-fistik-700 lift">
+        <span aria-hidden="true">★</span> Google'da 4,4 puan, 90 yorum
+      </p>
+      <h1 class="rise rise-2 display font-extrabold mt-5 text-[clamp(3rem,11vw,7.5rem)]">Gold<br>Petshop</h1>
+      <p class="rise rise-3 mt-6 max-w-[34ch] text-lg md:text-xl text-murek-soft">
+        Kedi, köpek, kuş ve akvaryum için mama, kum ve aksesuar. WhatsApp'tan yazın, siparişinizi Gaziantep ve çevresine getirelim.
+      </p>
+      <div class="rise rise-3 mt-8 flex flex-wrap gap-3">
+        <a href="https://wa.me/905530682692?text=Merhaba%20Gold%20Petshop%2C%20sipari%C5%9F%20vermek%20istiyorum." class="btn inline-flex items-center gap-2 rounded-full bg-gunes px-6 py-3.5 font-semibold text-murek float hover:bg-[#FFD066]">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+          WhatsApp'tan sipariş ver
+        </a>
+        <a href="#magaza" class="btn inline-flex items-center rounded-full bg-murek px-6 py-3.5 font-semibold text-kagit hover:bg-[#3C2650]">Mağazaya yol tarifi</a>
+      </div>
+    </div>
+    <div class="relative rise rise-2">
+      <div class="arch overflow-hidden float relative bg-fistik-300 aspect-[4/5] max-w-md mx-auto">
+        <img src="../assets/hero.jpg" alt="Mağaza tezgâhında bir kedi ve köpek yavrusu" class="w-full h-full object-cover" width="800" height="1000">
+        <div class="absolute inset-0 bg-gradient-to-t from-murek/40 via-transparent to-transparent"></div>
+      </div>
+      <div class="absolute -bottom-5 left-2 md:-left-6 rounded-2xl bg-white px-4 py-3 float text-sm">
+        <p class="font-semibold">Haftanın her günü</p>
+        <p class="text-murek-soft">09:00 – 21:00 arası açık</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ürünler -->
+<section id="urunler" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <h2 class="display font-bold text-4xl md:text-5xl max-w-[16ch]">Dostunuz için ne lazımsa rafta</h2>
+    <p class="max-w-[38ch] text-murek-soft">Aradığınız marka yoksa yazın, sizin için getirtelim.</p>
+  </div>
+  <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+    <a href="https://wa.me/905530682692?text=Merhaba%2C%20kedi%20%C3%BCr%C3%BCnleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="cat-card group block rounded-[28px] bg-white lift overflow-hidden">
+      <div class="aspect-square overflow-hidden relative bg-fistik-100"><img src="../assets/kedi.jpg" alt="Mama kabının arkasından bakan gri kedi" class="w-full h-full object-cover" loading="lazy"><div class="absolute inset-0 bg-fistik-500/10 mix-blend-multiply"></div></div>
+      <div class="p-4 md:p-5"><h3 class="display font-bold text-2xl">Kedi</h3><p class="text-sm text-murek-soft mt-1">Kuru ve yaş mama, kum, tırmalama</p></div>
+    </a>
+    <a href="https://wa.me/905530682692?text=Merhaba%2C%20k%C3%B6pek%20%C3%BCr%C3%BCnleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="cat-card group block rounded-[28px] bg-white lift overflow-hidden">
+      <div class="aspect-square overflow-hidden relative bg-[#FFF1CC]"><img src="../assets/kopek.jpg" alt="Oyuncak ipini ağzında tutan beagle" class="w-full h-full object-cover" loading="lazy"><div class="absolute inset-0 bg-gunes/10 mix-blend-multiply"></div></div>
+      <div class="p-4 md:p-5"><h3 class="display font-bold text-2xl">Köpek</h3><p class="text-sm text-murek-soft mt-1">Mama, ödül, tasma, oyuncak</p></div>
+    </a>
+    <a href="https://wa.me/905530682692?text=Merhaba%2C%20ku%C5%9F%20ve%20kemirgen%20%C3%BCr%C3%BCnleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="cat-card group block rounded-[28px] bg-white lift overflow-hidden">
+      <div class="aspect-square overflow-hidden relative bg-[#ECE6F2]"><img src="../assets/kus.jpg" alt="Dal üzerinde iki muhabbet kuşu" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="p-4 md:p-5"><h3 class="display font-bold text-2xl">Kuş ve kemirgen</h3><p class="text-sm text-murek-soft mt-1">Yem, kafes, vitamin</p></div>
+    </a>
+    <a href="https://wa.me/905530682692?text=Merhaba%2C%20akvaryum%20%C3%BCr%C3%BCnleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." class="cat-card group block rounded-[28px] bg-white lift overflow-hidden">
+      <div class="aspect-square overflow-hidden relative bg-[#DDEFEA]"><img src="../assets/akvaryum.jpg" alt="Neon balıklı bitkili akvaryum" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="p-4 md:p-5"><h3 class="display font-bold text-2xl">Akvaryum</h3><p class="text-sm text-murek-soft mt-1">Balık, bitki, filtre, yem</p></div>
+    </a>
+  </div>
+</section>
+
+<!-- Sipariş adımları -->
+<section id="siparis" class="bg-murek text-kagit relative grain overflow-hidden">
+  <div class="relative max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+    <div class="rounded-[28px] overflow-hidden float relative aspect-[16/10]">
+      <img src="../assets/teslimat.jpg" alt="Tezgâhta teslim edilen mama poşeti" class="w-full h-full object-cover" loading="lazy">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+    </div>
+    <div>
+      <h2 class="display font-bold text-4xl md:text-5xl">Mama bitti mi? Üç adımda kapınızda.</h2>
+      <ol class="mt-8 space-y-6">
+        <li class="flex gap-4"><span class="display font-extrabold text-3xl text-fistik-500 w-8 shrink-0">1</span><p><strong class="block text-lg">WhatsApp'tan yazın</strong><span class="text-kagit/75">Ürünün adını ya da fotoğrafını gönderin.</span></p></li>
+        <li class="flex gap-4"><span class="display font-extrabold text-3xl text-fistik-500 w-8 shrink-0">2</span><p><strong class="block text-lg">Fiyatı ve stoğu bildirelim</strong><span class="text-kagit/75">Dakikalar içinde dönüş yapıyoruz.</span></p></li>
+        <li class="flex gap-4"><span class="display font-extrabold text-3xl text-fistik-500 w-8 shrink-0">3</span><p><strong class="block text-lg">Gelip alın ya da getirelim</strong><span class="text-kagit/75">Kapıda nakit veya kartla ödeyin.</span></p></li>
+      </ol>
+      <a href="https://wa.me/905530682692?text=Merhaba%20Gold%20Petshop%2C%20sipari%C5%9F%20vermek%20istiyorum." class="btn mt-10 inline-flex rounded-full bg-gunes px-6 py-3.5 font-semibold text-murek hover:bg-[#FFD066]">Siparişe başla</a>
+    </div>
+  </div>
+</section>
+
+<!-- Mağaza -->
+<section id="magaza" class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-[.9fr_1.1fr] gap-8 md:gap-12">
+  <div>
+    <h2 class="display font-bold text-4xl md:text-5xl">Mağazamıza bekleriz</h2>
+    <dl class="mt-8 space-y-5">
+      <div><dt class="text-sm text-murek-soft">Adres</dt><dd class="text-lg font-medium">Yeşilvadi Blv. 72 Nolu Cd. No:382 C, Gaziantep</dd></div>
+      <div><dt class="text-sm text-murek-soft">Çalışma saatleri</dt><dd class="text-lg font-medium">Her gün 09:00 – 21:00</dd></div>
+      <div><dt class="text-sm text-murek-soft">Telefon</dt><dd class="text-lg font-medium"><a href="tel:+905530682692" class="underline underline-offset-4 decoration-fistik-500 hover:text-fistik-700">0553 068 26 92</a></dd></div>
+    </dl>
+    <a href="https://www.google.com/maps/search/?api=1&query=Gold%20Petshop%20Gaziantep" class="btn mt-8 inline-flex rounded-full bg-murek px-6 py-3.5 font-semibold text-kagit hover:bg-[#3C2650]">Google Haritalar'da aç</a>
+  </div>
+  <div class="rounded-[28px] overflow-hidden lift bg-fistik-100 min-h-[320px]">
+    <iframe title="Gold Petshop harita konumu" src="https://maps.google.com/maps?q=Gold%20Petshop%20Gaziantep&z=16&output=embed" class="w-full h-full min-h-[320px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<footer class="border-t border-murek/10">
+  <div class="max-w-6xl mx-auto px-4 pt-8 pb-24 md:pb-8 md:pr-24 flex flex-wrap justify-between gap-4 text-sm text-murek-soft">
+    <p>© 2026 Gold Petshop</p>
+    <p>Tasarım: <a href="https://bartss.com/" class="underline underline-offset-4 hover:text-murek">Bartss</a></p>
+  </div>
+</footer>
+
+<!-- Sabit WhatsApp -->
+<a href="https://wa.me/905530682692?text=Merhaba%20Gold%20Petshop%2C%20sipari%C5%9F%20vermek%20istiyorum." aria-label="WhatsApp'tan yazın" class="btn fixed bottom-5 right-5 z-40 grid place-items-center w-14 h-14 rounded-full bg-[#25D366] text-white float">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+</a>
+</body>
+</html>
