@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kuaför Vivien | Gaziantep Kadın Kuaförü</title>
+<meta name="description" content="Kuaför Vivien: Gaziantep'te kesim, fön, boya, balyaj, bakım ve gelin başı. Randevunuzu WhatsApp'tan alın.">
+<meta property="og:title" content="Kuaför Vivien | Gaziantep">
+<meta property="og:description" content="Kesim, boya, balyaj, bakım ve gelin başı. WhatsApp'tan randevu.">
+<meta property="og:image" content="../assets/hero.jpg">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: {
+    sarap: { DEFAULT:'#4A1428', deep:'#330D1B', soft:'#6B2A41' },
+    gul: '#F8EEEF',
+    pudra: '#E9CFD3',
+    pirinc: { DEFAULT:'#C9A15A', light:'#E2C68F' },
+    murdum: '#8C4A62',
+  },
+  fontFamily: { display:['"Bodoni Moda"','serif'], sans:['Manrope','system-ui','sans-serif'] },
+}}}
+</script>
+<style>
+  :root{ --spring:cubic-bezier(.34,1.56,.64,1); }
+  body{ background:#F8EEEF; color:#330D1B; line-height:1.7; }
+  .display{ font-family:"Bodoni Moda",serif; letter-spacing:-.03em; line-height:.95; }
+  .grain::after{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.14; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .hero-bg{ background:
+      radial-gradient(55% 60% at 80% 35%, rgba(201,161,90,.22), transparent 70%),
+      radial-gradient(50% 50% at 0% 100%, rgba(140,74,98,.55), transparent 70%),
+      radial-gradient(40% 40% at 40% 10%, rgba(107,42,65,.6), transparent 70%), #4A1428; }
+  /* Salon aynası: pirinç çerçeveli oval */
+  .ayna{ border-radius:50% / 42%; padding:10px; background:linear-gradient(145deg,#E2C68F,#A9803F 45%,#E2C68F 70%,#8E6A30);
+    box-shadow: 0 2px 4px rgba(51,13,27,.25), 0 30px 60px -20px rgba(51,13,27,.65); }
+  .ayna > div{ border-radius:50% / 42%; overflow:hidden; }
+  .ayna-sm{ padding:6px; }
+  .lift{ box-shadow: 0 1px 2px rgba(74,20,40,.06), 0 10px 30px -12px rgba(74,20,40,.25); }
+  .leader{ flex:1; border-bottom:1px dotted rgba(74,20,40,.35); margin:0 .75rem; transform:translateY(-.35em); }
+  .btn{ transition: transform .35s var(--spring), background-color .2s ease, color .2s ease; }
+  .btn:hover{ transform: translateY(-2px); }
+  .btn:active{ transform: translateY(1px) scale(.98); }
+  a:focus-visible{ outline:2px solid #C9A15A; outline-offset:3px; border-radius:4px; }
+  .hizmet a{ transition: color .2s ease; }
+  @keyframes rise{ from{ opacity:0; transform:translateY(20px) } to{ opacity:1; transform:none } }
+  .rise{ animation: rise .9s var(--spring) both; } .r2{ animation-delay:.12s } .r3{ animation-delay:.24s }
+  @media (prefers-reduced-motion: reduce){ .rise{ animation:none } .btn{ transition:none } }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<div class="bg-sarap-deep text-gul/90 text-sm">
+  <div class="max-w-6xl mx-auto px-4 py-2 flex flex-wrap gap-x-3 gap-y-1 items-center justify-center text-center">
+    <span>Bu sayfa Kuaför Vivien için hazırlanmış ücretsiz bir tasarım önizlemesidir.</span>
+    <a href="https://bartss.com/" class="underline underline-offset-4 decoration-pirinc hover:text-pirinc-light">Bartss · Alper Kayabaş</a>
+  </div>
+</div>
+
+<header class="sticky top-0 z-30 bg-sarap/95 backdrop-blur text-gul border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+    <a href="#" class="display text-xl md:text-2xl truncate min-w-0">Kuaför Vivien</a>
+    <nav class="hidden md:flex gap-7 text-[15px] text-gul/75">
+      <a href="#hizmetler" class="hover:text-gul">Hizmetler</a>
+      <a href="#randevu" class="hover:text-gul">Randevu</a>
+      <a href="#salon" class="hover:text-gul">Salon</a>
+    </nav>
+    <a href="tel:+905438942607" class="btn shrink-0 whitespace-nowrap rounded-full border border-pirinc/60 px-4 py-2 text-sm font-semibold text-pirinc-light hover:bg-pirinc hover:text-sarap-deep"><span class="md:hidden">Hemen ara</span><span class="hidden md:inline">0543 894 26 07</span></a>
+  </div>
+</header>
+
+<section class="hero-bg grain relative overflow-hidden text-gul">
+  <div class="relative max-w-6xl mx-auto px-4 pt-12 pb-20 md:pt-20 md:pb-28 grid md:grid-cols-[1.2fr_.8fr] gap-12 items-center">
+    <div>
+      <p class="rise text-pirinc-light font-medium">Google'da 4,7 puan · 953 yorum</p>
+      <h1 class="rise r2 display mt-5 text-[clamp(3.2rem,10vw,7rem)] font-medium">Kuaför<br>Vivien</h1>
+      <p class="rise r3 mt-7 max-w-[36ch] text-lg md:text-xl text-gul/80">
+        Kesim, fön, boya, balyaj ve gelin başı. Saatinizi WhatsApp'tan seçin, sandalyeniz hazır olsun.
+      </p>
+      <div class="rise r3 mt-9 flex flex-wrap gap-3">
+        <a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20randevu%20almak%20istiyorum." class="btn inline-flex items-center gap-2 rounded-full bg-pirinc px-6 py-3.5 font-semibold text-sarap-deep hover:bg-pirinc-light">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+          WhatsApp'tan randevu al
+        </a>
+        <a href="#hizmetler" class="btn inline-flex items-center rounded-full border border-gul/30 px-6 py-3.5 font-semibold text-gul hover:bg-gul hover:text-sarap">Hizmetleri gör</a>
+      </div>
+    </div>
+    <div class="rise r2 mx-auto w-full max-w-[340px]">
+      <div class="ayna"><div class="aspect-[4/5] relative">
+        <img src="../assets/hero.jpg" alt="Fön çekilmiş dalgalı kahverengi saçlarıyla bir kadın" class="w-full h-full object-cover" width="800" height="1000">
+        <div class="absolute inset-0 bg-gradient-to-t from-sarap-deep/35 to-transparent"></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+  <div class="grid md:grid-cols-[.8fr_1.2fr] gap-10 md:gap-16">
+    <div>
+      <h2 class="display text-4xl md:text-5xl font-medium">Hizmetlerimiz</h2>
+      <p class="mt-5 max-w-[34ch] text-murdum">Fiyat ve uygun saat için hizmetin yanındaki bağlantıya dokunun; mesajınız hazır gelir.</p>
+      <div class="mt-10 hidden md:block max-w-[260px]">
+        <div class="ayna ayna-sm"><div class="aspect-square"><img src="../assets/boya.jpg" alt="Folyolara boya uygulanan saç" class="w-full h-full object-cover" loading="lazy"></div></div>
+      </div>
+    </div>
+    <ul class="hizmet divide-y divide-sarap/10 border-y border-sarap/10">
+      <li class="py-5"><div class="flex items-baseline"><span class="display text-2xl md:text-[1.7rem]">Kesim ve fön</span><span class="leader" aria-hidden="true"></span><a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20kesim%20ve%20f%C3%B6n%20i%C3%A7in%20randevu%20ve%20fiyat%20bilgisi%20almak%20istiyorum." class="shrink-0 text-sm font-semibold text-murdum underline underline-offset-4 decoration-pirinc hover:text-sarap">Randevu al</a></div><p class="mt-1 text-murdum text-[15px]">Yüz hattınıza göre kesim, kalıcı hacimli fön</p></li>
+      <li class="py-5"><div class="flex items-baseline"><span class="display text-2xl md:text-[1.7rem]">Boya ve dip boya</span><span class="leader" aria-hidden="true"></span><a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20boya%20ve%20dip%20boya%20i%C3%A7in%20randevu%20ve%20fiyat%20bilgisi%20almak%20istiyorum." class="shrink-0 text-sm font-semibold text-murdum underline underline-offset-4 decoration-pirinc hover:text-sarap">Randevu al</a></div><p class="mt-1 text-murdum text-[15px]">Tek ton, beyaz kapatma, ton düzeltme</p></li>
+      <li class="py-5"><div class="flex items-baseline"><span class="display text-2xl md:text-[1.7rem]">Balyaj ve ombre</span><span class="leader" aria-hidden="true"></span><a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20balyaj%20ve%20ombre%20i%C3%A7in%20randevu%20ve%20fiyat%20bilgisi%20almak%20istiyorum." class="shrink-0 text-sm font-semibold text-murdum underline underline-offset-4 decoration-pirinc hover:text-sarap">Randevu al</a></div><p class="mt-1 text-murdum text-[15px]">Doğal geçişli, saçı yormayan açma</p></li>
+      <li class="py-5"><div class="flex items-baseline"><span class="display text-2xl md:text-[1.7rem]">Keratin ve bakım</span><span class="leader" aria-hidden="true"></span><a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20keratin%20ve%20bak%C4%B1m%20i%C3%A7in%20randevu%20ve%20fiyat%20bilgisi%20almak%20istiyorum." class="shrink-0 text-sm font-semibold text-murdum underline underline-offset-4 decoration-pirinc hover:text-sarap">Randevu al</a></div><p class="mt-1 text-murdum text-[15px]">Kabarma karşıtı düzleştirme, nem bakımı</p></li>
+      <li class="py-5"><div class="flex items-baseline"><span class="display text-2xl md:text-[1.7rem]">Gelin ve nişan başı</span><span class="leader" aria-hidden="true"></span><a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20gelin%20ve%20ni%C5%9Fan%20ba%C5%9F%C4%B1%20i%C3%A7in%20randevu%20ve%20fiyat%20bilgisi%20almak%20istiyorum." class="shrink-0 text-sm font-semibold text-murdum underline underline-offset-4 decoration-pirinc hover:text-sarap">Randevu al</a></div><p class="mt-1 text-murdum text-[15px]">Topuz, örgü ve dalga modelleri</p></li>
+      <li class="py-5"><div class="flex items-baseline"><span class="display text-2xl md:text-[1.7rem]">Kaş ve makyaj</span><span class="leader" aria-hidden="true"></span><a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20ka%C5%9F%20ve%20makyaj%20i%C3%A7in%20randevu%20ve%20fiyat%20bilgisi%20almak%20istiyorum." class="shrink-0 text-sm font-semibold text-murdum underline underline-offset-4 decoration-pirinc hover:text-sarap">Randevu al</a></div><p class="mt-1 text-murdum text-[15px]">Kaş alımı, özel gün makyajı</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="bg-pudra/60">
+  <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 items-end">
+    <figure class="col-span-1">
+      <div class="ayna ayna-sm"><div class="aspect-[4/5]"><img src="../assets/balyaj.jpg" alt="Bal köpüğü balyajlı uzun dalgalı saç" class="w-full h-full object-cover" loading="lazy"></div></div>
+      <figcaption class="mt-3 text-sm text-murdum text-center">Balyaj</figcaption>
+    </figure>
+    <figure class="col-span-1 md:translate-y-10">
+      <div class="ayna ayna-sm"><div class="aspect-[4/5]"><img src="../assets/gelin.jpg" alt="İnci tokalı gelin topuzu" class="w-full h-full object-cover" loading="lazy"></div></div>
+      <figcaption class="mt-3 text-sm text-murdum text-center">Gelin başı</figcaption>
+    </figure>
+    <figure class="col-span-2 md:col-span-1">
+      <div class="rounded-[28px] overflow-hidden lift relative aspect-[16/11]"><img src="../assets/salon.jpg" alt="Pirinç aynalı, bordo duvarlı salon" class="w-full h-full object-cover" loading="lazy"><div class="absolute inset-0 bg-sarap/15 mix-blend-multiply"></div></div>
+      <figcaption class="mt-3 text-sm text-murdum text-center">Salonumuz</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="randevu" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+  <h2 class="display text-4xl md:text-5xl font-medium max-w-[18ch]">Randevu almak bir dakika sürer</h2>
+  <ol class="mt-10 grid md:grid-cols-3 gap-8">
+    <li class="border-t border-pirinc pt-5"><span class="display text-5xl text-pirinc">1</span><p class="mt-3 font-semibold text-lg">Yazın</p><p class="text-murdum">İstediğiniz hizmeti ve günü WhatsApp'tan iletin.</p></li>
+    <li class="border-t border-pirinc pt-5"><span class="display text-5xl text-pirinc">2</span><p class="mt-3 font-semibold text-lg">Saatinizi onaylayalım</p><p class="text-murdum">Boş saatleri ve fiyatı hemen bildirelim.</p></li>
+    <li class="border-t border-pirinc pt-5"><span class="display text-5xl text-pirinc">3</span><p class="mt-3 font-semibold text-lg">Gelin, beklemeyin</p><p class="text-murdum">Sandalyeniz randevu saatinizde hazır.</p></li>
+  </ol>
+  <a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20randevu%20almak%20istiyorum." class="btn mt-12 inline-flex rounded-full bg-sarap px-7 py-4 font-semibold text-gul hover:bg-sarap-soft">Randevu al</a>
+</section>
+
+<section id="salon" class="bg-sarap text-gul relative grain overflow-hidden">
+  <div class="relative max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-[.9fr_1.1fr] gap-10 md:gap-14">
+    <div>
+      <h2 class="display text-4xl md:text-5xl font-medium">Salonumuz</h2>
+      <dl class="mt-8 space-y-5">
+        <div><dt class="text-sm text-pirinc-light">Adres</dt><dd class="text-lg">Değirmiçem, Süleyman Kuranel Cd., Şehitkamil / Gaziantep</dd></div>
+        <div><dt class="text-sm text-pirinc-light">Çalışma saatleri</dt><dd class="text-lg">09:00 – 19:00</dd></div>
+        <div><dt class="text-sm text-pirinc-light">Telefon</dt><dd class="text-lg"><a href="tel:+905438942607" class="underline underline-offset-4 decoration-pirinc hover:text-pirinc-light">0543 894 26 07</a></dd></div>
+      </dl>
+      <a href="https://www.google.com/maps/search/?api=1&query=Kuaf%C3%B6r%20Vivien%20Gaziantep" class="btn mt-9 inline-flex rounded-full bg-pirinc px-6 py-3.5 font-semibold text-sarap-deep hover:bg-pirinc-light">Yol tarifi al</a>
+    </div>
+    <div class="rounded-[28px] overflow-hidden min-h-[320px] bg-sarap-soft ring-1 ring-pirinc/40">
+      <iframe title="Kuaför Vivien harita konumu" src="https://maps.google.com/maps?q=Kuaf%C3%B6r%20Vivien%20Gaziantep&z=16&output=embed" class="w-full h-full min-h-[320px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-sarap-deep text-gul/60">
+  <div class="max-w-6xl mx-auto px-4 pt-8 pb-24 md:pb-8 md:pr-24 flex flex-wrap justify-between gap-4 text-sm">
+    <p>© 2026 Kuaför Vivien</p>
+    <p>Tasarım: <a href="https://bartss.com/" class="underline underline-offset-4 hover:text-gul">Bartss</a></p>
+  </div>
+</footer>
+
+<a href="https://wa.me/905438942607?text=Merhaba%20Kuaf%C3%B6r%20Vivien%2C%20randevu%20almak%20istiyorum." aria-label="WhatsApp'tan randevu alın" class="btn fixed bottom-5 right-5 z-40 grid place-items-center w-14 h-14 rounded-full bg-[#25D366] text-white" style="box-shadow:0 18px 40px -12px rgba(51,13,27,.5)">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+</a>
+</body>
+</html>
