@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dt. Burak Yıldız | Gaziantep Diş Hekimi</title>
+<meta name="description" content="Diş Hekimi Burak Yıldız: Gaziantep Şehitkamil. Muayene ve tedavi için randevu bilgisi, adres ve iletişim.">
+<meta property="og:title" content="Dt. Burak Yıldız | Gaziantep">
+<meta property="og:description" content="Randevu bilgisi, adres ve iletişim.">
+<meta property="og:image" content="../assets/hero.jpg">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: {
+    porselen: '#F3F6F4',
+    gece: { DEFAULT:'#17302A', soft:'#3D5650' },
+    adacayi: { DEFAULT:'#6F8F7E', light:'#C9D9CF', pale:'#E4EDE7' },
+    mine: '#FFFFFF',
+  },
+  fontFamily: { display:['Newsreader','Georgia','serif'], sans:['Figtree','system-ui','sans-serif'] },
+}}}
+</script>
+<style>
+  :root{ --spring:cubic-bezier(.34,1.56,.64,1); }
+  body{ background:#F3F6F4; color:#17302A; line-height:1.7; }
+  .display{ font-family:Newsreader,Georgia,serif; font-weight:400; letter-spacing:-.025em; line-height:1.02; }
+  .hero-bg{ background:
+      radial-gradient(55% 60% at 100% 0%, rgba(111,143,126,.28), transparent 70%),
+      radial-gradient(45% 50% at 0% 100%, rgba(201,217,207,.8), transparent 70%),
+      radial-gradient(30% 30% at 40% 40%, rgba(255,255,255,.7), transparent 70%), #F3F6F4; }
+  .grain::after{ content:""; position:absolute; inset:0; pointer-events:none; opacity:.12; mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .yuzey{ background:#fff; box-shadow: 0 1px 2px rgba(23,48,42,.05), 0 12px 32px -14px rgba(23,48,42,.22), 0 40px 70px -40px rgba(111,143,126,.35); }
+  .btn{ transition: transform .35s var(--spring), background-color .2s ease, color .2s ease; }
+  .btn:hover{ transform: translateY(-2px); } .btn:active{ transform: translateY(1px) scale(.98); }
+  a:focus-visible, button:focus-visible, select:focus-visible, textarea:focus-visible{ outline:2px solid #17302A; outline-offset:3px; border-radius:8px; }
+  /* FDI diş şeması */
+  .sema{ display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:4px; }
+  .dis{ aspect-ratio:3/4; border:1.5px solid #C9D9CF; background:#fff; border-radius:40% 40% 46% 46% / 30% 30% 60% 60%;
+    font: 600 12px/1 Figtree,sans-serif; color:#3D5650; display:grid; place-items:center; cursor:pointer;
+    transition: transform .3s var(--spring), background-color .2s ease, color .2s ease, border-color .2s ease; }
+  .alt .dis{ border-radius:46% 46% 40% 40% / 60% 60% 30% 30%; }
+  .dis:hover{ border-color:#6F8F7E; transform:translateY(-2px); }
+  .dis[aria-pressed="true"]{ background:#17302A; color:#fff; border-color:#17302A; }
+  .dis:active{ transform:scale(.94); }
+  @keyframes rise{ from{ opacity:0; transform:translateY(18px) } to{ opacity:1; transform:none } }
+  .rise{ animation: rise .8s var(--spring) both; } .r2{ animation-delay:.1s } .r3{ animation-delay:.2s }
+  @media (prefers-reduced-motion: reduce){ .rise{ animation:none } .btn,.dis{ transition:none } }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<div class="bg-gece text-porselen/90 text-sm">
+  <div class="max-w-6xl mx-auto px-4 py-2 flex flex-wrap gap-x-3 gap-y-1 items-center justify-center text-center">
+    <span>Bu sayfa Dt. Burak Yıldız için hazırlanmış ücretsiz bir tasarım önizlemesidir.</span>
+    <a href="https://bartss.com/" class="underline underline-offset-4 decoration-adacayi hover:text-white">Bartss · Alper Kayabaş</a>
+  </div>
+</div>
+
+<header class="sticky top-0 z-30 bg-porselen/90 backdrop-blur border-b border-gece/10">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
+    <a href="#" class="display text-xl md:text-2xl truncate min-w-0">Dt. Burak Yıldız</a>
+    <nav class="hidden md:flex gap-7 text-[15px] text-gece-soft">
+      <a href="#randevu" class="hover:text-gece">Randevu</a>
+      <a href="#tedaviler" class="hover:text-gece">Tedavi alanları</a>
+      <a href="#iletisim" class="hover:text-gece">İletişim</a>
+    </nav>
+    <a href="tel:+905517438990" class="btn shrink-0 whitespace-nowrap rounded-full bg-gece px-4 py-2 text-sm font-semibold text-white hover:bg-gece-soft"><span class="md:hidden">Ara</span><span class="hidden md:inline">0551 743 89 90</span></a>
+  </div>
+</header>
+
+<section class="hero-bg grain relative overflow-hidden">
+  <div class="relative max-w-6xl mx-auto px-4 pt-12 pb-16 md:pt-20 md:pb-24 grid md:grid-cols-[minmax(0,1.15fr)_minmax(0,.85fr)] gap-10 md:gap-14 items-center">
+    <div>
+      <p class="rise text-adacayi font-semibold">Diş Hekimi</p>
+      <h1 class="rise r2 display mt-3 text-[clamp(2.6rem,7vw,5rem)]">Dt. Burak Yıldız</h1>
+      <p class="rise r3 mt-6 max-w-[38ch] text-lg md:text-xl text-gece-soft">Ağız ve diş sağlığı muayenesi ve tedavisi. Muayenehanemizde randevu ile çalışılır; uygun gün ve saat için bize yazabilirsiniz.</p>
+      <div class="rise r3 mt-9 flex flex-wrap gap-3">
+        <a href="#randevu" class="btn inline-flex items-center rounded-full bg-gece px-6 py-3.5 font-semibold text-white hover:bg-gece-soft">Randevu talebi oluştur</a>
+        <a href="#iletisim" class="btn inline-flex items-center rounded-full border border-gece/25 px-6 py-3.5 font-semibold hover:bg-white">Adres ve yol tarifi</a>
+      </div>
+      <p class="rise r3 mt-6 text-sm text-gece-soft">Değirmiçem Mah. Mithat Enç Cd. No:10/C, Şehitkamil</p>
+    </div>
+    <div class="rise r2 mx-auto w-full max-w-[380px]">
+      <div class="rounded-[200px_200px_24px_24px] overflow-hidden relative aspect-[4/5] yuzey">
+        <img src="../assets/hero.jpg" alt="Gün ışığı alan sade bir muayene odası" class="w-full h-full object-cover" width="800" height="1000">
+        <div class="absolute inset-0 bg-gradient-to-t from-gece/30 to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Randevu: FDI diş şeması -->
+<section id="randevu" class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-[minmax(0,.8fr)_minmax(0,1.2fr)] gap-10 md:gap-14 items-start">
+  <div>
+    <h2 class="display text-4xl md:text-5xl">Randevu talebi</h2>
+    <p class="mt-5 max-w-[36ch] text-gece-soft">Şikâyetiniz olan dişi şemadan işaretleyin ve kısaca anlatın. Bilgiler WhatsApp mesajı olarak hazırlanır, göndermeden önce size gösterilir.</p>
+    <p class="mt-4 max-w-[36ch] text-sm text-gece-soft">Şema, diş hekimlerinin kullandığı FDI numaralandırmasını izler: ilk rakam çene bölgesini, ikinci rakam dişin sırasını gösterir.</p>
+  </div>
+  <form id="talep" class="yuzey rounded-3xl p-5 md:p-8" novalidate>
+    <div class="flex justify-between text-xs font-semibold text-gece-soft"><span>Sağ</span><span>Üst çene</span><span>Sol</span></div>
+    <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div class="sema" data-bolge="1"></div>
+      <div class="sema" data-bolge="2"></div>
+    </div>
+    <div class="my-3 border-t border-dashed border-adacayi-light"></div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 alt">
+      <div class="sema" data-bolge="4"></div>
+      <div class="sema" data-bolge="3"></div>
+    </div>
+    <div class="mt-2 flex justify-between text-xs font-semibold text-gece-soft"><span>Sağ</span><span>Alt çene</span><span>Sol</span></div>
+    <p id="secim" class="mt-4 min-h-[1.5rem] text-sm text-gece-soft" aria-live="polite">Diş seçilmedi. Genel kontrol için seçmeden devam edebilirsiniz.</p>
+
+    <div class="mt-4 grid sm:grid-cols-2 gap-4">
+      <label class="block"><span class="text-sm font-semibold">Talep konusu</span>
+        <select id="konu" name="konu" class="mt-1 w-full rounded-xl border border-gece/20 bg-porselen px-3 py-2.5">
+          <option>Genel kontrol ve temizlik</option>
+          <option>Ağrı veya hassasiyet</option>
+          <option>Dolgu</option>
+          <option>Kanal tedavisi bilgisi</option>
+          <option>Diş eti şikâyeti</option>
+          <option>Protez / kaplama bilgisi</option>
+          <option>Diğer</option>
+        </select></label>
+      <label class="block"><span class="text-sm font-semibold">Uygun olduğunuz zaman</span>
+        <select id="zaman" name="zaman" class="mt-1 w-full rounded-xl border border-gece/20 bg-porselen px-3 py-2.5">
+          <option>Fark etmez</option><option>Hafta içi sabah</option><option>Hafta içi öğleden sonra</option><option>Cumartesi</option>
+        </select></label>
+    </div>
+    <label class="block mt-4"><span class="text-sm font-semibold">Kısa not</span>
+      <textarea id="not" name="not" rows="2" placeholder="Örn. Soğuk içince sızlıyor" class="mt-1 w-full rounded-xl border border-gece/20 bg-porselen px-3 py-2.5"></textarea></label>
+    <button type="submit" class="btn mt-6 w-full inline-flex justify-center items-center gap-2 rounded-full bg-gece px-6 py-4 font-semibold text-white hover:bg-gece-soft">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+      WhatsApp ile randevu iste
+    </button>
+  </form>
+</section>
+
+<section id="tedaviler" class="bg-white">
+  <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,.9fr)] gap-10 md:gap-14 items-start">
+    <div>
+      <h2 class="display text-4xl md:text-5xl">Tedavi alanları</h2>
+      <dl class="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-6">
+        <div><dt class="font-semibold text-lg">Muayene ve koruyucu bakım</dt><dd class="text-gece-soft">Ağız içi muayene, diş taşı temizliği, fırçalama önerileri.</dd></div>
+        <div><dt class="font-semibold text-lg">Dolgu</dt><dd class="text-gece-soft">Çürük dokunun temizlenmesi ve dişin yeniden şekillendirilmesi.</dd></div>
+        <div><dt class="font-semibold text-lg">Kanal tedavisi</dt><dd class="text-gece-soft">Diş içindeki iltihaplı dokunun temizlenip doldurulması.</dd></div>
+        <div><dt class="font-semibold text-lg">Diş eti tedavisi</dt><dd class="text-gece-soft">Kanama ve çekilme gibi diş eti sorunlarının takibi.</dd></div>
+        <div><dt class="font-semibold text-lg">Protez ve kaplama</dt><dd class="text-gece-soft">Eksik ya da yıpranmış dişler için sabit ve hareketli çözümler.</dd></div>
+        <div><dt class="font-semibold text-lg">Diş çekimi</dt><dd class="text-gece-soft">Gerekli durumlarda lokal anestezi altında çekim.</dd></div>
+      </dl>
+      <p class="mt-10 max-w-[60ch] text-sm text-gece-soft border-l-2 border-adacayi pl-4">Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır. Size uygun tedavi ancak muayene sonrasında belirlenir.</p>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="rounded-3xl overflow-hidden aspect-square yuzey relative"><img src="../assets/alet.jpg" alt="Steril paket içinde muayene aletleri" class="w-full h-full object-cover" loading="lazy"></div>
+      <div class="rounded-3xl overflow-hidden aspect-square yuzey relative mt-10"><img src="../assets/muayene.jpg" alt="Hekimin ağız içi kamera görüntüsünü göstermesi" class="w-full h-full object-cover" loading="lazy"><div class="absolute inset-0 bg-adacayi/10 mix-blend-multiply"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim" class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-[minmax(0,.9fr)_minmax(0,1.1fr)] gap-10 md:gap-14">
+  <div>
+    <h2 class="display text-4xl md:text-5xl">İletişim</h2>
+    <dl class="mt-8 space-y-5">
+      <div><dt class="text-sm text-adacayi font-semibold">Adres</dt><dd class="text-lg">Değirmiçem Mah. Mithat Enç Cd. No:10/C, Şehitkamil / Gaziantep</dd></div>
+      <div><dt class="text-sm text-adacayi font-semibold">Çalışma düzeni</dt><dd class="text-lg">Randevu ile çalışılır</dd></div>
+      <div><dt class="text-sm text-adacayi font-semibold">Telefon</dt><dd class="text-lg"><a href="tel:+905517438990" class="underline underline-offset-4 decoration-adacayi hover:text-gece-soft">0551 743 89 90</a></dd></div>
+    </dl>
+    <a href="https://www.google.com/maps/search/?api=1&query=Di%C5%9F%20Hekimi%20Burak%20Y%C4%B1ld%C4%B1z%20Gaziantep" class="btn mt-9 inline-flex rounded-full bg-gece px-6 py-3.5 font-semibold text-white hover:bg-gece-soft">Yol tarifi al</a>
+  </div>
+  <div class="grid gap-4">
+    <div class="rounded-3xl overflow-hidden relative aspect-[16/8] yuzey"><img src="../assets/bekleme.jpg" alt="Sade, aydınlık bekleme alanı" class="w-full h-full object-cover" loading="lazy"></div>
+    <div class="rounded-3xl overflow-hidden min-h-[260px] bg-adacayi-pale">
+      <iframe title="Dt. Burak Yıldız harita konumu" src="https://maps.google.com/maps?q=Di%C5%9F%20Hekimi%20Burak%20Y%C4%B1ld%C4%B1z%20Gaziantep&z=16&output=embed" class="w-full h-full min-h-[260px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-gece/10">
+  <div class="max-w-6xl mx-auto px-4 pt-8 pb-24 md:pb-8 md:pr-24 flex flex-wrap justify-between gap-4 text-sm text-gece-soft">
+    <p>© 2026 Diş Hekimi Burak Yıldız</p>
+    <p>Tasarım: <a href="https://bartss.com/" class="underline underline-offset-4 hover:text-gece">Bartss</a></p>
+  </div>
+</footer>
+
+<a href="https://wa.me/905517438990?text=Merhaba%2C%20Dt.%20Burak%20Y%C4%B1ld%C4%B1z%20muayenehanesinden%20randevu%20almak%20istiyorum." aria-label="WhatsApp ile yazın" class="btn fixed bottom-5 right-5 z-40 grid place-items-center w-14 h-14 rounded-full bg-[#25D366] text-white" style="box-shadow:0 18px 40px -12px rgba(23,48,42,.45)">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.4Z"/></svg>
+</a>
+
+<script>
+  // FDI: 1 sağ üst (18→11), 2 sol üst (21→28), 4 sağ alt (48→41), 3 sol alt (31→38)
+  const BOLGE = { 1:'sağ üst', 2:'sol üst', 3:'sol alt', 4:'sağ alt' };
+  const secili = new Set();
+  document.querySelectorAll('.sema').forEach(function (s) {
+    const b = +s.dataset.bolge;
+    const cap = document.createElement('p'); cap.className = 'sm:hidden text-xs font-semibold text-gece-soft mb-1'; cap.textContent = BOLGE[b][0].toUpperCase() + BOLGE[b].slice(1) + ' çene'; s.before(cap);
+    const sira = (b === 1 || b === 4) ? [8,7,6,5,4,3,2,1] : [1,2,3,4,5,6,7,8];
+    sira.forEach(function (n) {
+      const btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'dis'; btn.textContent = '' + b + n;
+      btn.setAttribute('aria-pressed', 'false');
+      btn.setAttribute('aria-label', b + '' + n + ' numaralı diş, ' + BOLGE[b] + ' çene');
+      btn.addEventListener('click', function () {
+        const kod = btn.textContent;
+        if (secili.has(kod)) { secili.delete(kod); btn.setAttribute('aria-pressed','false'); }
+        else { secili.add(kod); btn.setAttribute('aria-pressed','true'); }
+        yaz();
+      });
+      s.appendChild(btn);
+    });
+  });
+  function yaz() {
+    const el = document.getElementById('secim');
+    if (!secili.size) { el.textContent = 'Diş seçilmedi. Genel kontrol için seçmeden devam edebilirsiniz.'; return; }
+    el.textContent = 'Seçilen: ' + [...secili].map(function (k) { return k + ' (' + BOLGE[k[0]] + ')'; }).join(', ');
+  }
+  document.getElementById('talep').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const satir = ['Merhaba, Dt. Burak Yıldız muayenehanesinden randevu almak istiyorum.'];
+    satir.push('Konu: ' + document.getElementById('konu').value);
+    if (secili.size) satir.push('Diş: ' + [...secili].map(function (k) { return k + ' (' + BOLGE[k[0]] + ')'; }).join(', '));
+    satir.push('Uygun zaman: ' + document.getElementById('zaman').value);
+    const not = document.getElementById('not').value.trim();
+    if (not) satir.push('Not: ' + not);
+    window.open('https://wa.me/905517438990?text=' + encodeURIComponent(satir.join('\n')), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
